@@ -1,0 +1,43 @@
+{
+  "name": "auth-nz",
+  "version": "1.0.0",
+  "description": "A node js application that can provide authentication and authorisation with just few lines of coding, more like okta, MSAL kind of authentication and authorization services",
+  "engines": {
+    "node": ">=19.8.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server",
+    "start:prod": "set NODE_ENV=production&nodemon server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^6.10.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.2",
+    "pug": "^3.0.2",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "ndb": "^1.1.5",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
+  }
+}
