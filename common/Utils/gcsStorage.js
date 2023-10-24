@@ -5,7 +5,7 @@ const path = require('path');
 const { GCS_BUCKET_NAME } = process.env;
 
 const storage = new Storage({
-  keyFilename: path.join(__dirname, '../constants/gcsKeys.json'),
+  keyFilename: path.join(__dirname, '../../keys.json'),
 });
 
 const uploadToGcs = (file, folderName) =>
